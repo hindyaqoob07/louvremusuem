@@ -682,35 +682,35 @@ class Revenue:#This class represents the revenue
 
 
 
-# Test case for Artowrk class
+# The test case for Artowrk class
 if __name__ == "__main__":
     artwork1 = Artwork("The Starry Night", "Painting", "Vincent van Gogh", 1889, "France", "Excellent", 1, 200000000)
     artwork2 = Artwork("The Persistence of Memory", "Painting", "Salvador Dali", 1931, "Spain", "Excellent", 1, 150000000)
     artwork3 = Artwork("The Scream", "Painting", "Edvard Munch", 1893, "Norway", "Good", 4, 120000000)
-    artwork1.set_price(9000000)
-    artwork2.get_condition()
-    Artwork.display_all_details()
-    Artwork.display_all_names()
-# Test case for gallery class
+    artwork1.set_price(9000000) #This line uses the set method which changes the prices to 9000000
+    artwork2.get_condition() #This line uses the get method which retrieves the condition of the piece
+    Artwork.display_all_details() #This line uses the display function to show all the information of the class 
+    Artwork.display_all_names() #This line uses the display method to show all the names of the pieces in the artowkr class
+# The test case for gallery class
 if __name__ == "__main__":
     gallery1 = Gallery("Renaissance Art", "John Smith", "2023-05-10")
-    gallery1.set_theme('Stars')
-    gallery1.get_curator()
+    gallery1.set_theme('Stars') #This line uses set method which changes the first attribute which is the theme to Stars
+    gallery1.get_curator() #This line uses the get method which retrieves the curator
     gallery1.add_piece()  # Add a piece to the gallery
     gallery1.add_piece()  # Add another piece to the gallery
     gallery1.add_visitor(30)  # Add 30 visitors to the gallery
-    gallery1.display_gallery_info()
+    gallery1.display_gallery_info() #This line uses the display method to show all the gallery information of the class
     gallery1.remove_piece()  # Remove a piece from the gallery
     gallery1.remove_visitor(20)  # Remove 20 visitors from the gallery
-    gallery1.display_gallery_info()
+    gallery1.display_gallery_info() #This line uses the display method to show the gallery information after the changes
 
-# Test case for location class
+# The test case for location class
 if __name__ == "__main__":
     location1 = Location("101A", "1st Floor", "(10, 20)", "Impressionist Collection", "Gallery A", "Exhibition X")
-    location1.set_piece_gallery('Gallery C')
-    location1.get_coordinates()
-    location1.display_location_info()
-# Test case for exhibition class
+    location1.set_piece_gallery('Gallery C') #This line uses the set method to change the Location of the Gallery 
+    location1.get_coordinates() #This line uses the get method to retireve the coordinates
+    location1.display_location_info() #This line uses the display method to show all the location information
+# The test case for exhibition class
 if __name__ == "__main__":
     special_guests = ["Bob Ross", "Khalid Ahmed", "Sarah Lucas"]
     start_time = "10:00 AM"
@@ -721,55 +721,55 @@ if __name__ == "__main__":
     print("Duration:", exhibition1.calculate_duration(), "days")
     exhibition1.set_end_time('8:00 PM')
     print("Duration:", exhibition1.calculate_duration(), "days")
-    exhibition1.get_special_guests()
-    exhibition1.display_exhibition_info()
+    exhibition1.get_special_guests() #This line uses the get method to retrieve the special guests 
+    exhibition1.display_exhibition_info() #This line uses the display method to show all the exhibition information
 
 
-# Test case for collection class
+# The test case for collection class
 if __name__ == "__main__":
     significant_pieces = ["AYOUCHA", "HAND AXE", "ASTROLABE"]
     collection1 = Collection("Impressionist Art", "Laryy Will", significant_pieces, 3, 5000)
-    collection1.set_theme('Dark Night')
-    collection1.get_num_of_collections()
-    collection1.display_collection_info()
-# Test case for employee class
+    collection1.set_theme('Dark Night') #This line uses the set method to change the theme of the collection
+    collection1.get_num_of_collections() #This line uses the get method to retrieve the number of collections
+    collection1.display_collection_info() #This line uses the display method to get all the information collection
+# The test case for employee class
 if __name__ == "__main__":
     employee1 = Employee("1989001", "Jassim", "AlEnzi", "Curator", "9 AM - 5 PM", "Art Department", "Full-time")
-    employee1.set_schedule('8 AM - 4 PM')
-    employee1.get_employee_ID()
-    employee1.display_employee_info()
-# Test case for tour class
+    employee1.set_schedule('8 AM - 4 PM') #This line uses the set method to change the schedule of the employee
+    employee1.get_employee_ID() #This lines uses the get method to retrieve the employee ID
+    employee1.display_employee_info() #This line uses the display method to show all the employee information
+# The test case for tour class
 if __name__ == "__main__":
     tour1 = Tour("Art Tour", 120, "2024-06-15", 20, 30, "Jassim AlEnzi", "Fluent", "Daily")
-    tour1.set_num_of_people(150)
-    tour1.get_availability_schedule()
-    tour1.display_tour_info()
+    tour1.set_num_of_people(150) #This line uses the set method to change the number people in the tour
+    tour1.get_availability_schedule() #This line uses the get method to retrieve the avaibility schedule
+    tour1.display_tour_info() #This line uses the display method to show the tour information 
 
 # Test case for Visitor class
 if __name__ == "__main__":
     visitor1 = Visitor("Hind", "BinTamim", 20, "Female", "hindbt", "123hind", "hind07@gmail.com", "788223", "T004", "Special Event", False)
-    visitor1.set_tour(True)
-    visitor1.get_typeofplan()
-    visitor1.display_visitor_info()
+    visitor1.set_tour(True) #This line uses the set method to change the tour status if it is True or False
+    visitor1.get_typeofplan() #This line uses the get method to retrieve the type of plan of the visitor
+    visitor1.display_visitor_info() #This line uses the display method to show all the visitor information
 import datetime
 
-# Test case for Ticket class
+# The test case for Ticket class
 if __name__ == "__main__":
     ticket1 = Ticket("Hind", "BinTamim", 20, "T123456", datetime.datetime(2024, 4, 1), datetime.date(2024, 3, 10), datetime.time(10, 30), 0, "Special Event", False)
-    ticket1.set_age(21)
-    ticket1.get_date_of_purchase()
-    ticket1.apply_pricing_logic()
-    ticket1.display_ticket_information()
+    ticket1.set_age(21) #This line uses the set method to change the age
+    ticket1.get_date_of_purchase() #This line uses the get method to retrieve the date of purchase
+    ticket1.apply_pricing_logic() #This line uses the apply method which applies the logic of the prices
+    ticket1.display_ticket_information() #This line uses the display method to show the ticket information
     # Check if ticket is for a tour
     # Check if ticket is expired
     if ticket1.is_expired():
         print("This ticket is expired.")
     else:
         print("This ticket is not expired.")
-# Test case for revenue class
+# The test case for revenue class
 if __name__ == "__main__":
     revenue1 = Revenue(5000, 2000, 10000)
-    revenue1.set_revenue_from_donations(2000000)
-    revenue1.get_revenue_from_tickets()
-    revenue1.display_revenue_info()
-    revenue1.calculate_total_revenue()
+    revenue1.set_revenue_from_donations(2000000)  #This line uses the set method to change the revenue from the donations
+    revenue1.get_revenue_from_tickets() #This line uses the get method to retrieve the revenue from tickets 
+    revenue1.display_revenue_info() #This line uses the display method to get the revenue information
+    revenue1.calculate_total_revenue() #This line uses a function to calculate the total revenue of the musuem
